@@ -1,0 +1,30 @@
+Traktorのプレイ履歴ファイルをデコードして、テキストのプレイリストデータを得るスクリプトです。
+
+
+履歴ファイルは次の様なファイル名で
+
+history_2011y05m13d_23h29m59s.nml
+
+Macの場合は以下のフォルダに記録されています。
+
+~/Documents/Native Instruments/Traktor/History
+
+Mac以外の場合 "history*.nml" とかで検索したら見つかる。
+
+
+
+次の様な感じで起動する。
+
+perl traktor-log-decode.pl /path/to/history/file.nml
+
+
+
+76行目あたりを書き換えると出力フォーマットをいじれる感じで。
+
+というかほぼ同様の機能をオンラインで提供されている方がいるので…
+http://snowland.net/nml/
+
+…車輪の再発名しちゃったよ。
+
+なんでこっちは自分で加工して「ブログにプレイリスト自動アップ」とかそういう事したい方向けです！
+
